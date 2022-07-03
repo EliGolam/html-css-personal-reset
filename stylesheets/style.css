@@ -100,3 +100,30 @@ select {
   }
 }
 /* End of Andy Bell's CSS reset: EDITED */
+
+/* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
+/* Page Layout choices */
+
+/* Component Layout choices */
+
+/* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-primary {
+
+}
+
+.background-secondary {
+
+}
+
+.color-primary {
+
+}
+
+.color-secondary { 
+
+}
+
+/* BLOCKS: component specific rules */
+
+/* EXCEPTIONS: variations to a block */
