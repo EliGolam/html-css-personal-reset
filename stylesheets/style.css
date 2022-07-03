@@ -131,3 +131,8 @@ select {
 /* BLOCKS: component specific rules */
 
 /* EXCEPTIONS: variations to a block */
+
+/* MEDIA QUERIES */
+@media screen and (max-width:700px) {
+  
+}
