@@ -96,25 +96,15 @@ select {
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
-.background-primary {
-    background: var(--clr-neutral-white);
-}
+.background-primary { background-color: var(--clr-neutral-white); }
 
-.background-secondary {
-    background: var(--clr-neutral-black);
-}
+.background-secondary { background-color: var(--clr-neutral-black); }
 
-.color-primary {
-    color: var(--clr-neutral-black);
-}
+.color-primary { color: var(--clr-neutral-black); }
 
-.color-secondary { 
-    color: var(--clr-neutral-white);
-}
+.color-secondary {  color: var(--clr-neutral-white); }
 
-.color-neutral {
-    color: var(--clr-neutral-grey);
-}
+.color-neutral { color: var(--clr-neutral-grey); }
 
 /* BLOCKS: component specific rules */
 
