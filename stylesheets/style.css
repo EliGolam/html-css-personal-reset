@@ -1,4 +1,5 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* These are some generic design choices for colour schemes, fonts and backgrounds */
 :root {
     /* Website Color Scheme */
     --clr-primary: rgba(87, 242, 178, 1);
@@ -24,7 +25,7 @@
 }
 
 /* Andy Bell's CSS reset: https://piccalil.li/blog/a-modern-css-reset/ */
-/* Box sizing rules */
+/* Box sizing rules and removing default margin and padding */
 *,
 *::before,
 *::after {
@@ -33,7 +34,7 @@
   padding: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* Remove list styles on ul, ol, which suggests default styling will be removed */
 ul,
 ol {
   list-style: none;
@@ -89,6 +90,7 @@ select {
 }
 /* End of Andy Bell's CSS reset: EDITED */
 
+
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
 
@@ -96,15 +98,17 @@ select {
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
-.background-primary { background-color: var(--clr-neutral-white); }
+.background-light { background-color: var(--clr-neutral-white); }
 
-.background-secondary { background-color: var(--clr-neutral-black); }
+.background-dark { background-color: var(--clr-neutral-black); }
 
-.color-primary { color: var(--clr-neutral-black); }
+.background-primary { background-color: var(--clr-primary);}
 
-.color-secondary {  color: var(--clr-neutral-white); }
+.background-secondary { background-color: var(--clr-secondary);}
 
-.color-neutral { color: var(--clr-neutral-grey); }
+.text-colour-dark {color: var(--clr-neutral-black);}
+
+.text-colour-light {color: var(--clr-neutral-white);}
 
 /* BLOCKS: component specific rules */
 
