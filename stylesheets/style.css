@@ -22,6 +22,8 @@
 
     --gap: 1rem;
     --flow-spacer: 1em;
+    --content-width: 900px;
+    --general-gap: 1rem;
 }
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
