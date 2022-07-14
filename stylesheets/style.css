@@ -2,8 +2,8 @@
 /* These are some generic design choices for colour schemes, fonts and backgrounds */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(87, 242, 178, 1);
-    --clr-secondary: rgba(250, 174, 95, 1);
+    --clr-primary: rgb(236, 46, 103);
+    --clr-secondary: rgb(66, 228, 179);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
