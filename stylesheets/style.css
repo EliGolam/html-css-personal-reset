@@ -30,6 +30,7 @@
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
+body { font:  var(--fontweight-normal) var(--fontsize-normal) var(--fontfamily-primary); }
 
 
 /* Component Layout choices */
@@ -48,6 +49,16 @@
 .social-links > .icon::after {
     font: var(--fa-font-brands);
 }
+
+.hidden-content { display: none; }
+
+.content-width { max-width: var(--content-width); margin: 0 auto;}
+
+.flow > * { margin-top: 2.5rem; }
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-light { background-color: var(--clr-neutral-white); }
