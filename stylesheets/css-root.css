@@ -1,30 +1,27 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
-/* These are some generic design choices for colour schemes, fonts and backgrounds */
-
+/* These are some generic design choices for colour schemes, fonts, gutters and gaps */
 :root {
-    /* Website Color Scheme */
-    --clr-primary: rgb(236, 46, 103);
-    --clr-secondary: rgb(66, 228, 179);
+    /* Color Schemes */
+    --clr-primary: #0d6efd;
+    --clr-secondary: #6c757d;
+    --clr-accent: #8b1428;
+  
+    --clr-dark-grey: #282828;
+    --clr-grey: #808080;
+    --clr-light-grey: #D2D2D2;
+    --clr-white: #FDFDFD;
 
-    --clr-neutral-white: rgba(246, 242, 233, 1);
-    --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(88, 89, 90, 1);
+    /* FONT */
+    --fontfamily-default: 'Roboto', Helvetica, Arial, sans-serif;
+    --fontweight-default: 400;
+    --fontsize-default: 1rem;
 
-    --fontfamily-primary: 'Roboto', Arial, Helvetica, sans-serif;
-    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    /* Spacing */
+    --flow-spacing: 1em;
 
-    --fontweight-thin: 200;
-    --fontweight-normal: 400;
-    --fontweight-heavy: 700;
-
-    --fontsize-small: 0.7rem;
-    --fontsize-normal: 1.1rem;
-    --fontsize-large: 2rem;
-    --fontsize-title: 3rem;
-
-    --gap: 1rem;
-    --flow-spacer: 1em;
-    --content-width: 900px;
-    --general-gap: 1rem;
+    /* --sm-breakpoint: 576px;
+    --md-breakpoint: 768px;
+    --lg-breakpoint: 992px;
+    --xl-breakpoint: 1200px;
+    --xxl-breakpoint: 1400px; */
 }

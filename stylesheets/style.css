@@ -1,165 +1,42 @@
 /* --------------------------------------------------------------------------------- */
 /*#region GENERAL DEFAULTS  */
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 50px);
-}
-
 body {
-    font:  var(--fontweight-normal) var(--fontsize-default) var(--fontfamily-primary);
-    color: var(--clr-neutral-black);
-    position: relative;
+    font: var(--fontweight-default) var(--fontsize-default) var(--fontfamily-default);
+    columns: var(--clr-dark-grey);
 }
-
-h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-normal); }
 /*#endregion GENERAL DEFAULTS  */
 /* --------------------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------------------- */
+/*#region UTILITIES */ 
+/* ------------------------------------------ */
+/*#region aesthetic elements */
+.flow > * + * {
+    margin-top: var(--flow-spacing);
+}
+/*#endregion aesthetic elements */
+
+/*#endregion UTILITIES */
+/* --------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------------- */
 /*#region COMPOSITION */
-/* Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 
 /*#endregion COMPOSITION */
 /* --------------------------------------------------------------------------------- */
 
 
 /* --------------------------------------------------------------------------------- */
-/*#region UTILITIES */ 
-/* One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
-
-/*#ICONS */
-.icon::before,
-.icon::after {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-
-    font: var(--fa-font-solid);
-}
-
-.icon::before { margin-right: .5rem; } /* Gives a little bit of space to avoid the */ 
-.icon::after { margin-left: .5rem; } /* icon being too close to the other elements*/
-
-.social-links > .icon::before,
-.social-links > .icon::after {
-    font: var(--fa-font-brands);
-}
-
-.clickable-icon::before,
-.clickable-icon::after {
-    transition:         
-        background-color 200ms ease-in, 
-        color 200ms ease-in,
-        transform 150ms ease-in;
-}
-
-.clickable-icon:hover::before,
-.clickable-icon:hover::after {
-    color: var(--clr-secondary);
-    transform: scale(1.2);
-}
-
-/* ------------------------------------------ */
-
-/* #BUTTONS */
-.ui-button {
-    padding: .4rem 1.3rem; /* creates the size of the button*/
-    border: transparent;
-    border-radius: 4px;
-    font-weight: var(--fontweight-heavy);
-    cursor: pointer;
-
-    transition: 
-        opacity 250ms,
-        color 250ms ease-in,
-        background-color 250ms ease-in,
-        border-color 200ms;
-}
-
-.ui-button:hover {
-    opacity: .7;
-}
-/* ------------------------------------------ */
-
-/* ANCHORDS & LINKS */
-li:not([class]) a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-} /* Default behaviour for list without classes*/
-
-.navigate-item { padding: 24px 0; }
-.navigate-item a { 
-    padding: 20px 0; 
-    transition: 
-        color 150ms ease-out;
-}
-.navigate-item a:hover { 
-    border-bottom: 4px solid var(--clr-secondary); 
-    color: var(--clr-secondary);
-}
-/* ------------------------------------------ */
-
-/* #FLEX */
-.flex { display: flex; }
-.flex-column { flex-direction: column; }
-.flex-wrap { flex-wrap: wrap; }
-
-.card-container {
-    gap: var(--gap);
-    justify-content: space-between;
-}
-.card-container > .flex { gap: var(--gap); }
-.card-item { flex-grow: 1; }
-
-/* ------------------------------------------ */
-
-/* #AESTHETIC ELEMENTS */
-.hidden-content { display: none; }
-
-.content-width { max-width: var(--content-width); margin: 0 auto;}
-
-.flow > * { margin-bottom: var(--flow-space); margin-top: var(--flow-space); }
-.flow-extra > * { margin-bottom: var(--flow-space-extra); margin-top: var(--flow-space-extra);}
-/* ------------------------------------------ */
-
-/* #COLOR SCHEMES */
-/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
-.background-light { background-color: var(--clr-neutral-white); }
-
-.background-dark { background-color: var(--clr-neutral-black); }
-
-.background-primary { background-color: var(--clr-primary);}
-
-.background-secondary { background-color: var(--clr-secondary);}
-
-.background-secondary-darker { background-color: var(--clr-secondary-darker);}
-
-.text-colour-dark {color: var(--clr-neutral-black);}
-
-.text-colour-light {color: var(--clr-neutral-white);}
-
-.text-colour-secondary {color: var(--clr-secondary);}
-/* ------------------------------------------ */
-
-/*#endregion UTILITIES */
+/*#region BLOCKS: component specific rules */
+/*#endregion BLOCKS: component specific rules */
 /* --------------------------------------------------------------------------------- */
-
-
-
-/* --------------------------------------------------------------------------------- */
-/* BLOCKS: component specific rules */
-/* --------------------------------------------------------------------------------- */
-
-
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
-
 
 
 /* --------------------------------------------------------------------------------- */
 /*#region MEDIA QUERIES */
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 
-}
+} */
 /*#endregion MEDIA QUERIES */
 /* --------------------------------------------------------------------------------- */
